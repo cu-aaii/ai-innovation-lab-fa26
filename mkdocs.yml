@@ -1,0 +1,84 @@
+site_name: AI Innovation Lab
+site_description: INFO 4730 / 5731 — Cornell University, Fall 2026
+site_author: Cornell AI Innovation Hub
+site_url: https://cu-aaii.github.io/ai-innovation-lab/
+
+theme:
+  name: material
+  palette:
+    primary: custom
+    accent: custom
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.copy
+    - content.tooltips
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - tables
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Syllabus: syllabus.md
+  - Schedule: schedule.md
+  - Getting Started: getting-started.md
+  - Assignments:
+    - Overview & Grading: assignments/index.md
+    - Ongoing Coursework:
+      - A1 — Weekly Reflection: assignments/a1-reflection.md
+      - A2 — Weekly 4-Box Report: assignments/a2-4box.md
+      - A3 — Peer Evaluation: assignments/a3-peer-eval.md
+      - A4 — Tech Lead Check-in: assignments/a4-techlead.md
+      - A5 — Stakeholder Meeting: assignments/a5-stakeholder.md
+    - Final Deliverables:
+      - F1 — Working AI Tool: assignments/f1-working-tool.md
+      - F2 — Technical Documentation: assignments/f2-documentation.md
+      - F3 — Final Presentation & Demo: assignments/f3-presentation.md
+      - F4 — Client Handoff Package: assignments/f4-handoff.md
+  - Projects:
+    - How Projects Work: projects/index.md
+    - FA26 Cohort: projects/fa26/index.md
+  - Resources:
+    - Tools & Platforms: resources/tools.md
+    - Architecture Patterns: resources/architecture.md
+    - Responsible AI & Data: resources/responsible-ai.md
+  - Clinic Notes: clinic-notes/index.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cu-aaii
+    - icon: fontawesome/solid/globe
+      link: https://innovationhub.ai.cornell.edu
